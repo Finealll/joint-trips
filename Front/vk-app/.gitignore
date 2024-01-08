@@ -2,3 +2,5 @@
 node_modules/
 .idea/
 build/
+
+vk-hosting-config.json
