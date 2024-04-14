@@ -1,6 +1,6 @@
-namespace DataApi.Dto
+﻿namespace DataApi.Dto
 {
-    public class AssignDto
+    public class FoundPairDto
     {
         public long UserId { get; set; }
 

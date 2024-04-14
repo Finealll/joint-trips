@@ -1,0 +1,390 @@
+{
+  "distance": null,
+  "isPersonal": false,
+  "commentsCount": 0,
+  "event": {
+    "id": "652e84d6560f920069f7aaed",
+    "url": "/tula/concert/stas-pekha-2024-01-05",
+    "permanent": false,
+    "systemTags": [
+      {
+        "code": "concert"
+      },
+      {
+        "code": "nearest-events"
+      },
+      {
+        "code": "pop"
+      },
+      {
+        "code": "emotional-concert"
+      },
+      {
+        "code": "non-children"
+      },
+      {
+        "code": "non-puppets"
+      },
+      {
+        "code": "quest-players-1"
+      },
+      {
+        "code": "quest-players-2"
+      },
+      {
+        "code": "quest-players-3"
+      },
+      {
+        "code": "quest-players-4"
+      },
+      {
+        "code": "quest-players-5"
+      },
+      {
+        "code": "quest-players-6"
+      },
+      {
+        "code": "quest-players-7"
+      },
+      {
+        "code": "quest-players-8"
+      }
+    ],
+    "title": "Стас Пьеха",
+    "originalTitle": null,
+    "dateReleased": null,
+    "argument": null,
+    "promoArgument": null,
+    "contentRating": "6+",
+    "kinopoisk": null,
+    "userRating": {
+      "overall": {
+        "value": 0,
+        "count": 0
+      }
+    },
+    "isFavorite": false,
+    "type": {
+      "id": "56699aed6ee3da166ca94dd4",
+      "code": "concert",
+      "name": "Концерт",
+      "description": "",
+      "namePlural": "Концерты",
+      "plural": null,
+      "rubricPlacesUrl": "/tula/concert/places",
+      "status": "approved",
+      "type": "format",
+      "nameCases": {
+        "nameAcc": "на концерт",
+        "nameGen": "концерта"
+      }
+    },
+    "tags": [
+      {
+        "id": "56699aed6ee3da166ca94dd4",
+        "code": "concert",
+        "name": "Концерт",
+        "description": "",
+        "namePlural": "Концерты",
+        "plural": null,
+        "rubricPlacesUrl": "/tula/concert/places",
+        "status": "approved",
+        "type": "format",
+        "nameCases": {
+          "nameAcc": "на концерт",
+          "nameGen": "концерта"
+        }
+      },
+      {
+        "id": "57037e29e243691640ea820e",
+        "code": "pop",
+        "name": "Поп",
+        "description": null,
+        "namePlural": null,
+        "plural": null,
+        "rubricPlacesUrl": "/tula/pop/places",
+        "status": "approved",
+        "type": "genre",
+        "nameCases": {
+          "nameAcc": null,
+          "nameGen": null
+        }
+      }
+    ],
+    "tickets": [],
+    "poster": null,
+    "promoImage2": {
+      "featuredDesktop": {
+        "url": "https://avatars.mds.yandex.net/get-afishanew/34116/45450d740a0c6cceb68427779dfd5ae6/s940x380",
+        "width": 940,
+        "height": 380,
+        "precision": 1,
+        "retina": {
+          "1x": "https://avatars.mds.yandex.net/get-afishanew/34116/45450d740a0c6cceb68427779dfd5ae6/s940x380",
+          "2x": "https://avatars.mds.yandex.net/get-afishanew/34116/45450d740a0c6cceb68427779dfd5ae6/s1880x760"
+        }
+      }
+    },
+    "promoVideo2": {},
+    "image": {
+      "subType": null,
+      "bgColor": "#4b4b4d",
+      "baseColor": "#b4b4b8",
+      "source": {
+        "id": null,
+        "url": "https://vk.com/wolfieha",
+        "title": "vk.com"
+      },
+      "sizes": {
+        "eventCover": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s270x135",
+          "width": 270,
+          "height": 135,
+          "precision": 1
+        },
+        "eventCoverXS": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/90x60",
+          "width": 90,
+          "height": 60,
+          "precision": 1
+        },
+        "eventCoverS": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/100x60",
+          "width": 100,
+          "height": 60,
+          "precision": 1
+        },
+        "eventCoverL": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s380x220",
+          "width": 380,
+          "height": 220,
+          "precision": 1
+        },
+        "eventCoverL2x": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s760x440",
+          "width": 760,
+          "height": 440,
+          "precision": 1
+        },
+        "eventCoverM": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s380x190",
+          "width": 380,
+          "height": 190,
+          "precision": 1
+        },
+        "eventCoverM2x": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s760x380",
+          "width": 760,
+          "height": 380,
+          "precision": 1
+        },
+        "featured": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s940x380",
+          "width": 940,
+          "height": 380,
+          "precision": 1
+        },
+        "featuredSelection": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s420x140",
+          "width": 420,
+          "height": 140,
+          "precision": 1
+        },
+        "headingPrimaryS": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s1260x400",
+          "width": 1260,
+          "height": 400,
+          "precision": 1
+        },
+        "microdata": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/orig",
+          "width": 2280,
+          "height": 1500,
+          "precision": 1
+        },
+        "suggest": {
+          "url": "https://avatars.mds.yandex.net/get-afishanew/34116/060c41fc6282d80b78614ebeef19e051/s130x90",
+          "width": 130,
+          "height": 90,
+          "precision": 1
+        }
+      }
+    }
+  },
+  "scheduleInfo": {
+    "collapsedText": null,
+    "dateEnd": "2024-01-05",
+    "dateGroups": [
+      {
+        "title": "Январь",
+        "date": "2024-01-05",
+        "period": 1,
+        "hasTickets": false,
+        "hasDiscounts": false
+      }
+    ],
+    "dateReleased": null,
+    "dates": [
+      "2024-01-05"
+    ],
+    "dateStarted": "2024-01-05",
+    "multiSession": false,
+    "oneOfPlaces": {
+      "id": "5515b98b1f7d154a12d93533",
+      "url": "/tula/concert/places/gorodskoi-kontsertnyi-zal",
+      "type": {
+        "id": "5575d419cc1c724f5a8e1125",
+        "rubricUrl": "/tula/concert_hall",
+        "rubricPlacesUrl": "/tula/concert_hall/places",
+        "code": "concert_hall",
+        "description": null,
+        "type": "place",
+        "status": "approved",
+        "name": "Концертный зал",
+        "namePlural": "концертные залы",
+        "nameAcc": "в концертный зал",
+        "nameGen": null,
+        "nameAdj": null,
+        "plural": null
+      },
+      "tags": [
+        {
+          "id": "5575d419cc1c724f5a8e1125",
+          "rubricUrl": "/tula/concert_hall",
+          "rubricPlacesUrl": "/tula/concert_hall/places",
+          "code": "concert_hall",
+          "description": null,
+          "type": "place",
+          "status": "approved",
+          "name": "Концертный зал",
+          "namePlural": "концертные залы",
+          "nameAcc": "в концертный зал",
+          "nameGen": null,
+          "nameAdj": null,
+          "plural": null
+        }
+      ],
+      "logo": null,
+      "title": "Городской концертный зал",
+      "address": "ул. Советская, 2",
+      "systemTags": [
+        {
+          "code": "concert_hall"
+        },
+        {
+          "code": "mainpage-export"
+        }
+      ],
+      "city": {
+        "id": "tula",
+        "name": "Тула",
+        "geoid": 15,
+        "timezone": "Europe/Moscow"
+      },
+      "coordinates": {
+        "longitude": 37.61229,
+        "latitude": 54.200233
+      },
+      "bgColor": "#5f4e81",
+      "logoColor": "#977cce",
+      "distance": null,
+      "promoImage2FeaturedDesktop": null,
+      "promoImage2FeaturedBannerDesktop": null,
+      "promoVideo2FeaturedDesktop": null,
+      "metro": [],
+      "isFavorite": false
+    },
+    "onlyPlace": {
+      "id": "5515b98b1f7d154a12d93533",
+      "url": "/tula/concert/places/gorodskoi-kontsertnyi-zal",
+      "type": {
+        "id": "5575d419cc1c724f5a8e1125",
+        "rubricUrl": "/tula/concert_hall",
+        "rubricPlacesUrl": "/tula/concert_hall/places",
+        "code": "concert_hall",
+        "description": null,
+        "type": "place",
+        "status": "approved",
+        "name": "Концертный зал",
+        "namePlural": "концертные залы",
+        "nameAcc": "в концертный зал",
+        "nameGen": null,
+        "nameAdj": null,
+        "plural": null
+      },
+      "tags": [
+        {
+          "id": "5575d419cc1c724f5a8e1125",
+          "rubricUrl": "/tula/concert_hall",
+          "rubricPlacesUrl": "/tula/concert_hall/places",
+          "code": "concert_hall",
+          "description": null,
+          "type": "place",
+          "status": "approved",
+          "name": "Концертный зал",
+          "namePlural": "концертные залы",
+          "nameAcc": "в концертный зал",
+          "nameGen": null,
+          "nameAdj": null,
+          "plural": null
+        }
+      ],
+      "logo": null,
+      "title": "Городской концертный зал",
+      "address": "ул. Советская, 2",
+      "systemTags": [
+        {
+          "code": "concert_hall"
+        },
+        {
+          "code": "mainpage-export"
+        }
+      ],
+      "city": {
+        "id": "tula",
+        "name": "Тула",
+        "geoid": 15,
+        "timezone": "Europe/Moscow"
+      },
+      "coordinates": {
+        "longitude": 37.61229,
+        "latitude": 54.200233
+      },
+      "bgColor": "#5f4e81",
+      "logoColor": "#977cce",
+      "distance": null,
+      "promoImage2FeaturedDesktop": null,
+      "promoImage2FeaturedBannerDesktop": null,
+      "promoVideo2FeaturedDesktop": null,
+      "metro": [],
+      "isFavorite": false
+    },
+    "permanent": false,
+    "placePreview": "Городской концертный зал",
+    "placesTotal": 1,
+    "preview": {
+      "type": "date",
+      "text": "Сегодня 5 января, 19:00",
+      "startDate": null,
+      "regularity": null,
+      "singleDate": {
+        "day": "5",
+        "month": "января"
+      }
+    },
+    "regularity": {
+      "isRegular": true,
+      "singleShowtime": "2024-01-05T19:00:00",
+      "daily": [],
+      "weekly": []
+    },
+    "tagsPreview": null,
+    "prices": [
+      {
+        "currency": "rub",
+        "value": 180000
+      }
+    ],
+    "pushkinCardAllowed": false
+  }
+}

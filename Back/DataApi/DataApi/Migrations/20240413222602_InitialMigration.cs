@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DataApi.Migrations
 {
-    public partial class InitMigration : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,39 +45,40 @@ namespace DataApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EventDalUserDal",
+                name: "UserEvents",
                 columns: table => new
                 {
-                    EventsId = table.Column<int>(type: "integer", nullable: false),
-                    UsersId = table.Column<long>(type: "bigint", nullable: false)
+                    EventId = table.Column<int>(type: "integer", nullable: false),
+                    UserId = table.Column<long>(type: "bigint", nullable: false),
+                    IsPairFounded = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EventDalUserDal", x => new { x.EventsId, x.UsersId });
+                    table.PrimaryKey("PK_UserEvents", x => new { x.UserId, x.EventId });
                     table.ForeignKey(
-                        name: "FK_EventDalUserDal_Events_EventsId",
-                        column: x => x.EventsId,
+                        name: "FK_UserEvents_Events_EventId",
+                        column: x => x.EventId,
                         principalTable: "Events",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_EventDalUserDal_Users_UsersId",
-                        column: x => x.UsersId,
+                        name: "FK_UserEvents_Users_UserId",
+                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_EventDalUserDal_UsersId",
-                table: "EventDalUserDal",
-                column: "UsersId");
+                name: "IX_UserEvents_EventId",
+                table: "UserEvents",
+                column: "EventId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "EventDalUserDal");
+                name: "UserEvents");
 
             migrationBuilder.DropTable(
                 name: "Events");

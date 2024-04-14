@@ -13,11 +13,22 @@ namespace DataApi.Models
 
         public DbSet<UserDal> Users { get; set; }
 
+        public DbSet<UserEventDal> UserEvents { get; set; }
+
         protected override void OnModelCreating( ModelBuilder modelBuilder )
         {
-            modelBuilder.Entity<EventDal>()
-                .HasMany(e => e.Users)
-                .WithMany(e => e.Events);
+            modelBuilder.Entity<UserEventDal>()
+                .HasOne(x => x.User)
+                .WithMany(e => e.UserEvents)
+                .HasForeignKey(x => x.UserId)
+                .IsRequired();
+            modelBuilder.Entity<UserEventDal>()
+                .HasOne(x => x.Event)
+                .WithMany(e => e.EventUsers)
+                .HasForeignKey(x => x.EventId)
+                .IsRequired();
+            modelBuilder.Entity<UserEventDal>()
+                .HasKey(u => new { u.UserId, u.EventId });
         }
     }
 }

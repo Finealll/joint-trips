@@ -33,6 +33,6 @@ namespace DataApi.Models
 
         public string ImageLink { get; set; }
 
-        public List<UserDal> Users { get; set; } = new ();
+        public List<UserEventDal> EventUsers { get; set; } = new ();
     }
 }

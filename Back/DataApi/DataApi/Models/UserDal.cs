@@ -4,6 +4,6 @@ namespace DataApi.Models
     {
         public long Id { get; set; }
 
-        public List<EventDal> Events { get; set; } = new ();
+        public List<UserEventDal> UserEvents { get; set; } = new ();
     }
 }

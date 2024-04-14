@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240106112346_InitMigration")]
-    partial class InitMigration
+    [Migration("20240413222602_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -88,34 +88,51 @@ namespace DataApi.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("EventDalUserDal", b =>
+            modelBuilder.Entity("DataApi.Models.UserEventDal", b =>
                 {
-                    b.Property<int>("EventsId")
-                        .HasColumnType("integer");
-
-                    b.Property<long>("UsersId")
+                    b.Property<long>("UserId")
                         .HasColumnType("bigint");
 
-                    b.HasKey("EventsId", "UsersId");
+                    b.Property<int>("EventId")
+                        .HasColumnType("integer");
 
-                    b.HasIndex("UsersId");
+                    b.Property<bool>("IsPairFounded")
+                        .HasColumnType("boolean");
 
-                    b.ToTable("EventDalUserDal");
+                    b.HasKey("UserId", "EventId");
+
+                    b.HasIndex("EventId");
+
+                    b.ToTable("UserEvents");
                 });
 
-            modelBuilder.Entity("EventDalUserDal", b =>
+            modelBuilder.Entity("DataApi.Models.UserEventDal", b =>
                 {
-                    b.HasOne("DataApi.Models.EventDal", null)
-                        .WithMany()
-                        .HasForeignKey("EventsId")
+                    b.HasOne("DataApi.Models.EventDal", "Event")
+                        .WithMany("EventUsers")
+                        .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DataApi.Models.UserDal", null)
-                        .WithMany()
-                        .HasForeignKey("UsersId")
+                    b.HasOne("DataApi.Models.UserDal", "User")
+                        .WithMany("UserEvents")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Event");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("DataApi.Models.EventDal", b =>
+                {
+                    b.Navigation("EventUsers");
+                });
+
+            modelBuilder.Entity("DataApi.Models.UserDal", b =>
+                {
+                    b.Navigation("UserEvents");
                 });
 #pragma warning restore 612, 618
         }
