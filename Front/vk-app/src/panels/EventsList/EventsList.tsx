@@ -1,12 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes, {func, string} from 'prop-types';
 
-import {Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar, SimpleCell} from '@vkontakte/vkui';
+import {
+    Panel,
+    PanelHeader,
+    Header,
+    Button,
+    Group,
+    Cell,
+    Div,
+    Avatar,
+    SimpleCell,
+    SplitLayout,
+    SplitCol, DateInput
+} from '@vkontakte/vkui';
 import dateFunctions from "../../utils/dateUtils.ts";
 
-function EventsList ({ id, openEvent, events }) {
+function EventsList ({ id, openEvent, events, filterDate, setFilterDate }) {
     return <Panel id={id}>
         <PanelHeader>Культура40</PanelHeader>
+        <Div>
+            <SplitLayout>
+                <SplitCol>
+                    <Div>
+                        <Button stretched size="l" mode="primary" onClick={() => setFilterDate(null)}>
+                            Актуальные
+                        </Button>
+                    </Div>
+                </SplitCol>
+                <SplitCol>
+                    <Div>
+                        <DateInput
+                            value={filterDate}
+                            onChange={setFilterDate}
+                            enableTime={false}
+                            disablePast={true}
+                            disableFuture={false}
+                            closeOnChange={true}
+                            disablePickers={false}
+                            showNeighboringMonth={true}
+                            disableCalendar={false}
+                        />
+                    </Div>
+                </SplitCol>
+            </SplitLayout>
+        </Div>
         <Group>
             {events ? events.map(event => {
                 return <SimpleCell
